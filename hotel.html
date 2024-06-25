@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .room {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Hotel</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our hotel. We offer the best services for our guests.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our hotel's history and values.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Explore the variety of services we offer to our guests.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Rooms</h2>
+        <div class="room">
+            <h3>Standard Room</h3>
+            <p>Description of the standard room.</p>
+            <p>Price: $100 per night</p>
+        </div>
+        <div class="room">
+            <h3>Deluxe Room</h3>
+            <p>Description of the deluxe room.</p>
+            <p>Price: $150 per night</p>
+        </div>
+        <div class="room">
+            <h3>Suite</h3>
+            <p>Description of the suite.</p>
+            <p>Price: $200 per night</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For more information or to make a reservation, please contact us.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Our Hotel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
